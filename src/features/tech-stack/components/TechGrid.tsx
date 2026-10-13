@@ -1,5 +1,8 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { Code2, ShieldCheck, Database, Layers } from "lucide-react";
+import { motion } from "framer-motion";
 
 export const TechGrid = () => {
   const t = useTranslations("Skills");
@@ -41,25 +44,45 @@ export const TechGrid = () => {
 
   return (
     <section id="habilidades" className="mb-28 scroll-mt-24">
-      <div className="text-center mb-12">
+      {/* Encabezado con Scrollytelling (#2) */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-12"
+      >
         <h3 className="text-3xl font-bold text-[#F9FAFB] mb-3">{t("title")}</h3>
         <p className="text-slate-400 text-sm max-w-xl mx-auto">{t("subtitle")}</p>
         <div className="w-12 h-1 bg-[#38BDF8] mx-auto rounded-full mt-4" />
-      </div>
+      </motion.div>
 
+      {/* Grid de Habilidades con Animaciones Escalonadas (#2, #28) */}
       <div className="grid md:grid-cols-2 gap-8">
         {skills.map((item, index) => {
           const Icon = item.icon;
           return (
-            <div
+            <motion.div
               key={index}
-              className={`bg-white/[0.035] backdrop-blur-3xl border border-white/[0.1] shadow-[0_12px_40px_0_rgba(0,0,0,0.36),inset_0_1px_0_0_rgba(255,255,255,0.12)] p-8 rounded-3xl space-y-4 ${item.borderHover} hover:-translate-y-1 transition-all duration-300`}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              whileHover={{ y: -6, scale: 1.01 }}
+              className={`bg-white/[0.035] backdrop-blur-3xl border border-white/[0.1] shadow-[0_12px_40px_0_rgba(0,0,0,0.36),inset_0_1px_0_0_rgba(255,255,255,0.12)] p-8 rounded-3xl space-y-4 ${item.borderHover} transition-all duration-300 group`}
             >
               <div className="flex items-center gap-3">
-                <div className="p-3.5 rounded-2xl bg-white/[0.05] border border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]">
+                {/* Icono Animado Interactivo (#11) */}
+                <motion.div
+                  whileHover={{ rotate: 12, scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                  className="p-3.5 rounded-2xl bg-white/[0.05] border border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)] group-hover:border-white/20 transition-colors"
+                >
                   <Icon className={`w-6 h-6 ${item.color}`} />
-                </div>
-                <h4 className="text-xl font-bold text-[#F9FAFB]">{item.title}</h4>
+                </motion.div>
+                <h4 className="text-xl font-bold text-[#F9FAFB] group-hover:text-sky-300 transition-colors">
+                  {item.title}
+                </h4>
               </div>
 
               <p className="text-slate-400 text-sm leading-relaxed">
@@ -68,15 +91,16 @@ export const TechGrid = () => {
 
               <div className="flex flex-wrap gap-2 pt-2">
                 {item.tags.map((tag) => (
-                  <span
+                  <motion.span
                     key={tag}
-                    className="text-xs bg-white/[0.04] text-slate-300 border border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] px-2.5 py-1 rounded-lg font-mono"
+                    whileHover={{ scale: 1.08, y: -2 }}
+                    className="text-xs bg-white/[0.04] text-slate-300 border border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] px-2.5 py-1 rounded-lg font-mono cursor-default hover:text-sky-300 hover:border-sky-400/40 transition-colors"
                   >
                     {tag}
-                  </span>
+                  </motion.span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

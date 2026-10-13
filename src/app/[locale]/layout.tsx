@@ -35,10 +35,10 @@ export default async function LocaleLayout({
       <body className="bg-[#030712] text-[#F9FAFB] antialiased min-h-screen relative selection:bg-sky-500/25 selection:text-sky-200">
         {/* Apple-style Liquid Ambient Lighting Canvas */}
         <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
-          <div className="absolute -top-[20%] left-[10%] w-[650px] h-[650px] bg-sky-500/12 rounded-full blur-[140px]" />
-          <div className="absolute top-[30%] -right-[15%] w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[160px]" />
-          <div className="absolute -bottom-[10%] left-[20%] w-[700px] h-[700px] bg-cyan-500/10 rounded-full blur-[160px]" />
-          <div className="absolute top-[60%] left-[-10%] w-[500px] h-[500px] bg-blue-600/8 rounded-full blur-[150px]" />
+          <div className="absolute -top-[20%] left-[10%] w-[650px] h-[650px] bg-sky-500/12 rounded-full blur-[140px] animate-liquid-1" />
+          <div className="absolute top-[30%] -right-[15%] w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[160px] animate-liquid-2" />
+          <div className="absolute -bottom-[10%] left-[20%] w-[700px] h-[700px] bg-cyan-500/10 rounded-full blur-[160px] animate-liquid-3" />
+          <div className="absolute top-[60%] left-[-10%] w-[500px] h-[500px] bg-blue-600/8 rounded-full blur-[150px] animate-liquid-1" />
         </div>
 
         <NextIntlClientProvider messages={messages}>
