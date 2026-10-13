@@ -1,0 +1,89 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "role": "Junior Software Developer",
+    "location": "Quito, Ecuador",
+    "description": "Fourth-semester Software Development student with experience in automated QA testing (Playwright, Pytest), technical documentation, and databases on an Odoo 19 ERP. Development in Python, Java, and C#, with UI design in Figma. Looking to join a development team to continue growing in real-world environments.",
+    "cta": "Contact Me",
+    "email": "osoriojeremy3f@gmail.com"
+  },
+  "Experience": {
+    "title": "Work Experience",
+    "subtitle": "Pre-professional internships and real-world system projects",
+    "company": "SOLUCIONES KAPPA OCHO LAYEREIGHT C.L.",
+    "role": "Pre-professional Intern – QA and ERP Documentation (Odoo 19)",
+    "period": "August 2026 – October 2026",
+    "badge": "240 hours",
+    "tasks": [
+      "Designed and executed automated QA tests in Python using Playwright and Pytest on RADICAL ERP modules in Odoo 19.",
+      "Documented and reported bugs and issues discovered during test runs, with reproduction steps.",
+      "Authored the User Manual and Technical Manual for the ERP system.",
+      "Modeled system architecture and data structures using Entity-Relationship and C4 diagrams.",
+      "Analyzed table relationships in PostgreSQL and verified compliance with database design best practices.",
+      "Configured a local environment with Docker Desktop (database and Odoo 19 localhost server) to run tests."
+    ]
+  },
+  "Skills": {
+    "title": "Skills & Competencies",
+    "subtitle": "Technologies and tools applied across software engineering and quality assurance",
+    "devTitle": "Development & Languages",
+    "devDesc": "Python, Java, C#, HTML, CSS, JavaScript, TypeScript. Business logic implementation and clean architecture.",
+    "qaTitle": "Quality Assurance & QA",
+    "qaDesc": "Playwright, Pytest, automated test design and execution, bug reporting, technical and user manuals.",
+    "dbTitle": "Databases & Architecture",
+    "dbDesc": "PostgreSQL, SQL Server, MySQL. Relational modeling with ER diagrams and system architecture with C4 diagrams.",
+    "toolsTitle": "Tools & Environments",
+    "toolsDesc": "Odoo 19, Docker Desktop, Visual Studio, Visual Studio Code, Figma, and version control with Git/GitHub."
+  },
+  "Projects": {
+    "title": "Academic & Real-world Projects",
+    "subtitle": "Software solutions built with focus on best practices and real-world user needs",
+    "p1Title": "Pet Adoption System",
+    "p1Tech": "C# • Figma • Email Notifications",
+    "p1Desc": "Comprehensive platform to manage pets, volunteers, and adoption requests, featuring an admin dashboard and adopter portals. Designed UI in Figma and integrated automated email notifications.",
+    "p2Title": "Child Vaccination System",
+    "p2Tech": "Java • SQL Server • Appointment Scheduling",
+    "p2Desc": "Child vaccination tracking system managing patients, guardians, and vaccine doses. Includes appointment scheduling, calendar reminders via email, and relational database in SQL Server.",
+    "p3Title": "Banking & ATM System",
+    "p3Tech": "Python • Transaction Management • Use Cases",
+    "p3Desc": "Banking application with user registration, authentication, balance inquiries, and transaction simulations, created from rigorous requirements analysis and use cases.",
+    "p4Title": "Professional Web Portfolio",
+    "p4Tech": "Next.js • TypeScript • Tailwind CSS • i18n",
+    "p4Desc": "Modern portfolio built with modular component architecture, multi-language support (ES / EN) using next-intl, SEO optimizations, and responsive design."
+  },
+  "Education": {
+    "title": "About Me & Education",
+    "subtitle": "Professional profile, academic background, and certifications",
+    "profileTitle": "Professional Profile",
+    "profileDesc": "Fourth-semester Software Development student with experience in automated QA testing (Playwright, Pytest), technical documentation, and databases on an Odoo 19 ERP. Development in Python, Java, and C#, with UI design in Figma. Looking to join a development team to continue growing in real-world environments.",
+    "collegeTitle": "Higher Technology Degree in Software Development",
+    "collegePlace": "Instituto Tecnológico Universitario Cordillera – Quito, Ecuador",
+    "collegePeriod": "2024 – Present (Fourth semester)",
+    "collegeDesc": "Hands-on training in object-oriented programming, software architecture, relational databases, agile methodologies, and software quality.",
+    "highSchoolTitle": "High School Diploma in Sciences",
+    "highSchoolPlace": "Unidad Educativa Hipatia Cárdenas de Bustamante",
+    "highSchoolPeriod": "2018 – 2024",
+    "certTitle": "Additional Training & Certifications",
+    "cert1": "Python Certificate – freeCodeCamp (2026)",
+    "cert2": "Professional HTML & CSS Course – Azul School (2025)",
+    "langTitle": "Languages",
+    "langDesc": "Spanish (Native) | English (A2)"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind or looking for a Junior Developer / QA tester for your team?",
+    "description": "I am available to join software development teams and contribute to real-world software and QA projects.",
+    "locationLabel": "Location",
+    "location": "Quito, Ecuador",
+    "emailLabel": "Email Address",
+    "email": "osoriojeremy3f@gmail.com",
+    "ctaEmail": "Send an Email"
+  }
+}
